@@ -1,0 +1,38 @@
+doctype 5
+html(lang="en")
+  head
+    title= title
+    
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="description", content="")
+    meta(name="author", content="")
+
+    //link(rel="shortcut icon", href="/img/logo-256x256.png", type="image/vnd.microsoft.icon")
+    //Bootstrap
+    link(rel='stylesheet', href='//cdn.jsdelivr.net/bootstrap/2.3.1/css/bootstrap.min.css')
+    //Bootstrap Theme
+    link(rel="stylesheet", href="http://bootswatch.com/readable/bootstrap.min.css")
+    //Bootstrap Responsive
+    link(rel='stylesheet', href='//cdn.jsdelivr.net/bootstrap/2.3.1/css/bootstrap-responsive.min.css')
+    
+    block stylesheets
+    //jQuery
+    script(src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js")
+    //Twitter Bootstrap
+    script(src="//cdn.jsdelivr.net/bootstrap/2.3.1/js/bootstrap.min.js")
+    //Date Format
+    script(src="/js/plugins/date/jquery.jqia.dateFormat.js")
+    script
+      $(document).ready(function() {
+        $.getScript( "/js/global.js", function(e){ includeFooter( new Date() ) } );
+      });
+
+    block javascripts
+
+  body
+    block content
+
+  footer
+    center
+      &copy; <span></span> chrisaiv

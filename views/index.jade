@@ -1,0 +1,79 @@
+extends layout
+
+block stylesheets
+  style
+    
+    #galleria{ width: auto; height: 600px; background: #000 }
+
+block javascripts
+  //Galleria
+  script(src="/portfolio/galleria-1.2.9.min.js")
+  script
+    $(document).ready(function() {
+      Galleria.loadTheme('/portfolio/themes/classic/galleria.classic.min.js');
+      Galleria.run('#galleria');
+    });
+
+
+block content
+  .navbar.navbar-inverse.navbar-fixed-top
+      .navbar-inner
+          .container
+            button.btn.btn-navbar(type='button', data-toggle='collapse', data-target='.nav-collapse')
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.brand(href='#') chrisaiv
+            .nav-collapse.collapse
+              ul.nav
+                li.active
+                  a(href='#') Home
+                li
+                  a(href='#about') About
+                li
+                  a(href='#contact') Contact
+                li.dropdown
+                  a.dropdown-toggle(href='#', data-toggle='dropdown')
+                    | Dropdown
+                    b.caret 
+                    ul.dropdown-menu(role="menu")
+                      li
+                        a(href='#option1') Option 1
+                         i
+                      li
+                        a(href='#option2') Option 2
+                         i
+                      
+    .container
+        //Main hero unit for a primary marketing message or call to action 
+        .hero-unit
+          #galleria
+            img(src="http://farm5.staticflickr.com/4060/4582201683_5e053347af.jpg", border="0")
+            img(src="http://farm3.staticflickr.com/2538/4122468063_4feffab84e.jpg", border="0")
+            img(src="http://farm9.staticflickr.com/8105/8568317292_7f4db6b1c4.jpg", border="0")
+            img(src="http://farm5.staticflickr.com/4131/4994596090_bb1b58f810.jpg", border="0")
+            img(src="http://farm4.staticflickr.com/3397/5833804847_f914435a23.jpg", border="0")
+            img(src="http://farm4.staticflickr.com/3518/5821005168_de952aca4a.jpg", border="0")
+          
+        //Example row of columns 
+        .row
+          .span4
+            h2 Heading
+            p
+              | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+            p
+              a.btn(href='#') View details »
+          .span4
+            h2 Heading
+            p
+              | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+            p
+              a.btn(href='#') View details »
+          .span4
+            h2 Heading
+            p
+              | Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+            p
+              a.btn(href='#') View details »
+  
+  
