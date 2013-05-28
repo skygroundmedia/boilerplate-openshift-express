@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "name-of-project",
   "version": "1.0.0",
   "description": "OpenShift Sample Application",
   "keywords": [
@@ -25,7 +25,8 @@
   },
 
   "dependencies": {
-	"ejs": "0.8.3"
+	"express": "3.2.x",
+	"jade": "0.30.x"
   },
   "devDependencies": {},
   "bundleDependencies": [],
