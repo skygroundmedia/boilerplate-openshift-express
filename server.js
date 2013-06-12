@@ -8,8 +8,8 @@ var app = express();
 
 app.configure(function(){
   app.locals.pretty = true;
-  app.set('port', process.env.OPENSHIFT_INTERNAL_PORT || 8080);
-  app.set('ipaddress', process.env.OPENSHIFT_INTERNAL_IP);
+  app.set('port', process.env.OPENSHIFT_NODEJS_PORT || 8080);
+  app.set('ipaddress', process.env.OPENSHIFT_NODEJS_IP);
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
   //Favicon
