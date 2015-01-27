@@ -1,6 +1,8 @@
-How to configure ExpressJS for OpenShift
+ExpressJS boilerplate for Openshift
 ===============================
-Boilerplate ExpressJS for @OpenShift
+A JS stack using MongoDB, ExpressJS, Bootstrap 2.3, NodeJS for Openshift
+
+Packages
 -
 - ExpressJS version: 4.2
 - Bootstrap 2.3
