@@ -1,7 +1,10 @@
-How to configure ExpressJS (4.2) for OpenShift
+How to configure ExpressJS for OpenShift
 ===============================
-
 Boilerplate ExpressJS for @OpenShift
+-
+- ExpressJS version: 4.2
+- Bootstrap 2.3
+
 
 Resources
 -
